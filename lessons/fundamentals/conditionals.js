@@ -67,3 +67,59 @@ if (isLightBulbOn !== true) {
 if (!isLightBulbOn) {
   console.log("Refactored - The light bulb is off");
 }
+
+var today = new Date();
+console.log(today.getSeconds());
+var currentSeconds = today.getSeconds();
+
+// ? Write an if statement to determine if the current seconds are odd or even.
+// ? If even - console.log ex: "The current seconds is 22 and is even"
+
+// ? If odd - console.log ex: "The current seconds is 23 and is odd"
+
+//  5/2 R 1
+//  22/2 R 0
+console.log("Remainder from the division", currentSeconds % 2);
+
+if (currentSeconds % 2 === 0) {
+  console.log(`The current second is ${currentSeconds} and it is even`);
+} else {
+  console.log(`The current second is ${currentSeconds} and it is odd`);
+}
+
+// ! Ternary Statements
+var birthDate = new Date("12-05-1990");
+console.log(birthDate);
+
+var age = 20;
+
+if (age >= 18) {
+  console.log("you can vote");
+} else {
+  console.log("you can not vote");
+}
+// 1. Conditional
+// 2. What you want to happen if it is true
+// 3. What you want to happen if it is false
+// (1)         (2)                                    (3)
+age >= 18 ? console.log("T: you can vote") : console.log("T: you can not vote");
+
+// ! Switch Statement
+if (month === "Jun" || month === "Dec" || month === "Oct") {
+  console.log("");
+}
+let month = "Oct";
+let totalNumberofDays = 0;
+switch (month) {
+  case "Dec":
+  case "Jan":
+    totalNumberofDays = 31;
+    break;
+  case "Feb":
+    totalNumberofDays = 28;
+    break;
+  default:
+    totalNumberofDays = "Month did not match";
+}
+
+console.log(totalNumberofDays);
