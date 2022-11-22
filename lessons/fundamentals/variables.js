@@ -47,3 +47,13 @@ console.log("Variable lastName", lastName);
 // Changed Value
 lastName = "Smith";
 console.log("Variable lastName", lastName);
+
+let fruit = "Apple";
+let snack = fruit;
+
+console.log("fruit", fruit);
+
+console.log("snack", snack);
+fruit = "orange";
+
+console.log("snack2", snack);
