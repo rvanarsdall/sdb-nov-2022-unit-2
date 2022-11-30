@@ -64,6 +64,7 @@ while (i <= 10) {
 }
 
 /* 
+CHALLENGE: 
 December has 31 days in it. Create a while loop that will loop through 1-31
 - inside the while loop keep track of a total (value of the i's added up each go around)
 */
